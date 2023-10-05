@@ -6,14 +6,42 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
-.header-menu {
-	background: #1b2838;
-	padding: 20px 0;
-	position: relative;
-	width: 100%;
+/* PARTE HEADER */
+header .header {
+    display: flex;
+    background: #1b2838;
+    flex-direction: row; 
+}
+header .imageLogo{
+    display: flex;
+    width: auto;
 }
 
+header .imagem  { 
+    display: flex;
+    height: 65px;
+}
+
+header .menu{
+    display: flex;
+    width: 100%;
+}
+header .menu ul{
+    display: flex;
+    flex-direction: row;
+}
+
+header .menu li {
+    margin: 0 0px 0 15px;
+}
+
+.menu a {
+	text-transform: uppercase;
+	color: #c5c3c0;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
 /* PARTE SLIDE */
 
 #carousel{
@@ -27,32 +55,8 @@ body {
     height: 100%;
 }
 
-/*  */
- h1 img { 
-    height: 65px;
-    margin-top: 10px;
-	margin-left: 200px;
-}
 
-.menu {
-	position: absolute;
-	top: 50px;
-	right: 170px;
-	margin-bottom: 70px;
-}
 
-.menu li {
-	display: inline;
-	margin: 0 0px 0 15px;
-}
-
-.menu a {
-	text-transform: uppercase;
-	color: #c5c3c0;
-	font-weight: bold;
-	font-size: 22px;
-	text-decoration: none;
-}
 @media(min-width: 1024px) {
     .div-img-carousel, .item.active {
         overflow: hidden;
@@ -317,6 +321,6 @@ ion-icon{
     cursor: pointer;
   }
 
-  @media screen and (max-width: 641px) {
+  /* @media screen and (max-width: 641px) {
 
-  }
+  } */
