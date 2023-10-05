@@ -316,3 +316,7 @@ ion-icon{
     text-decoration: none;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 641px) {
+
+  }
